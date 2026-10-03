@@ -47,7 +47,7 @@ class TabPFNService:
 
             try:
                 from tabpfn import TabPFNClassifier
-                self.model = TabPFNClassifier(device="auto", N_ensemble_configurations=8)
+                self.model = TabPFNClassifier(device="auto")
                 self.model.fit(X, y)
                 self.model_name = "TabPFN v2.0 (Prior Labs Foundation Model)"
                 self.is_tabpfn = True

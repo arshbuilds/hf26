@@ -1,6 +1,9 @@
 import os
 import requests
 from typing import Dict, Any
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class LLMDeconstructorService:
     SYSTEM_PROMPT = """You are Kaizen, an empathetic, calming focus companion built specifically for a friend struggling with ADHD task paralysis, anxiety, and burnout.
@@ -49,21 +52,25 @@ Your philosophy:
         url = "https://api.groq.com/openai/v1/chat/completions"
         headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
         prompt = f"Friend's Name: {friend_name}\nEmotional State: {emotional_state}\nOverwhelming Task: {task}\n\nDeconstruct this into a 2-minute micro-action plan."
-        payload = {
-            "model": "llama-3.2-3b-preview",
-            "messages": [
-                {"role": "system", "content": cls.SYSTEM_PROMPT},
-                {"role": "user", "content": prompt}
-            ],
-            "temperature": 0.4
-        }
-        try:
-            resp = requests.post(url, headers=headers, json=payload, timeout=12)
-            if resp.status_code == 200:
-                text = resp.json()["choices"][0]["message"]["content"]
-                return {"success": True, "provider": "Groq (Llama-3.2-3B-Open-Weight)", "plan": text}
-        except Exception:
-            pass
+        
+        # Open-weight models supported on Groq
+        candidate_models = ["qwen/qwen3.8-27b", "openai/gpt-oss-20b"]
+        for model in candidate_models:
+            payload = {
+                "model": model,
+                "messages": [
+                    {"role": "system", "content": cls.SYSTEM_PROMPT},
+                    {"role": "user", "content": prompt}
+                ],
+                "temperature": 0.4
+            }
+            try:
+                resp = requests.post(url, headers=headers, json=payload, timeout=12)
+                if resp.status_code == 200:
+                    text = resp.json()["choices"][0]["message"]["content"]
+                    return {"success": True, "provider": f"Groq ({model})", "plan": text}
+            except Exception:
+                continue
         return {"success": False}
 
     @classmethod
