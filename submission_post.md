@@ -1,7 +1,7 @@
 ---
 title: Kaizen: The Gentle Habit & Focus Companion Built for Siddharth
 published: false
-tags: devchallenge, weekendchallenge, hf26challenge, tabpfn, render
+tags: hf26challenge, tabpfn, render, devchallenge
 canonical_url: https://github.com/arshbuilds/hf26
 ---
 
