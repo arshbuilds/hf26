@@ -18,24 +18,24 @@ export default function AboutOpenView({ friendName }: AboutOpenViewProps) {
         </div>
 
         <h3 className="text-2xl font-bold text-[#1e332d]">
-          Built for {friendName}: Overcoming ADHD Task Paralysis with Open AI
+          Built for {friendName}: Overcoming Diagnosed Anxiety & Task Paralysis with Open AI
         </h3>
 
         <div className="space-y-3 text-[#334b44] text-sm md:text-base leading-relaxed">
           <p>
-            My friend <strong>{friendName}</strong> is a brilliant developer and student, but like millions of people living with ADHD and sensory fatigue, they regularly experience severe <strong>task paralysis</strong>. When faced with large assignments or messy spaces, their nervous system treats the to-do list like an existential threat, freezing them in place for hours.
+            My friend <strong>{friendName}</strong> is a brilliant developer and creator, but living with <strong>diagnosed anxiety</strong> and executive dysfunction, he frequently experiences severe <strong>task paralysis</strong>. When faced with large responsibilities or chaotic task lists, his nervous system enters an acute fight-or-flight freeze, making even starting a task feel like an existential dread.
           </p>
 
           <p>
-            Traditional productivity tools only compounded the stress:
+            Conventional productivity and time-management apps only amplify that panic:
           </p>
 
           <blockquote className="border-l-4 border-[#059669] pl-4 italic text-[#243f37] bg-[#f7fdfa] p-3 rounded-r-xl">
-            "Every productivity app makes me feel like a failure. They demand rigid 45-minute Pomodoro blocks and barrage me with angry red warning badges when I fall behind." — {friendName}
+            "When my anxiety flares up, a to-do list looks like a wall of threats. Traditional apps demand rigid 45-minute blocks and slap red guilt badges on missed goals. Kaizen does the opposite: it calms my nervous system down, gives me an effortless 2-minute doorway, and guides me through bite-sized momentum chunks without panic." — {friendName}
           </blockquote>
 
           <p>
-            <strong>Kaizen (改善)</strong> was designed to replace pressure with gentle presence. Grounded in the Japanese philosophy of continuous 2-minute micro-improvements, Kaizen never judges. It turns monumental hurdles into effortless, atomic actions and uses tabular machine learning to protect their physical rhythm.
+            <strong>Kaizen (改善)</strong> replaces pressure with compassionate presence. Grounded in continuous micro-improvements, Kaizen never judges. It dissolves paralyzing boulders into sequenced, low-friction checkpoints and uses tabular machine learning to safeguard your recovery rhythm.
           </p>
         </div>
       </div>

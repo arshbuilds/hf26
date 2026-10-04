@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "改善 Kaizen — The Gentle Habit & Focus Companion",
-  description: "Built for Alex to overcome task paralysis and burnout using open-source AI (TabPFN + Llama 3.2)",
+  description: "Built for Siddharth to overcome diagnosed anxiety and task paralysis using open-source AI (TabPFN + Open-Weight LLMs)",
 };
 
 export default function RootLayout({

@@ -31,7 +31,7 @@ tabpfn_service = TabPFNService()
 class DeconstructRequest(BaseModel):
     task: str = Field(..., example="Write the 10-page computer networks lab report")
     emotional_state: str = Field(default="Task Paralysis", example="Task Paralysis")
-    friend_name: str = Field(default="Alex", example="Alex")
+    friend_name: str = Field(default="Siddharth", example="Siddharth")
     provider: Optional[str] = Field(default="auto")
     api_key: Optional[str] = None
 

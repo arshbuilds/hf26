@@ -8,7 +8,7 @@ import { Sparkles, Activity, Heart, User, ExternalLink } from "lucide-react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"deconstruct" | "forecast" | "about">("deconstruct");
-  const [friendName, setFriendName] = useState("Alex");
+  const [friendName, setFriendName] = useState("Siddharth");
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8 md:py-12 space-y-8">
@@ -35,7 +35,7 @@ export default function Home() {
               type="text"
               value={friendName}
               onChange={(e) => setFriendName(e.target.value)}
-              className="w-16 font-bold text-[#1e332d] bg-transparent border-b border-dashed border-[#556b64] focus:outline-none"
+              className="w-20 font-bold text-[#1e332d] bg-transparent border-b border-dashed border-[#556b64] focus:outline-none"
             />
           </div>
 
@@ -56,7 +56,7 @@ export default function Home() {
           }`}
         >
           <Sparkles className="w-4 h-4" />
-          2-Minute Micro-Actions
+          Task Progression Roadmap
         </button>
 
         <button
