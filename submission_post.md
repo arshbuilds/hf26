@@ -2,7 +2,7 @@
 title: Kaizen: The Gentle Habit & Focus Companion Built for Siddharth
 published: false
 tags: devchallenge, weekendchallenge, hf26challenge, tabpfn, render
-canonical_url: https://github.com/your-username/kaizen-hf26
+canonical_url: https://github.com/arshbuilds/hf26
 ---
 
 *This is a submission for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01)*
@@ -44,7 +44,7 @@ Traditional productivity tools only compounded the anxiety:
 
 ## Code
 
-* **GitHub Repository:** [https://github.com/your-username/kaizen-hf26](https://github.com/your-username/kaizen-hf26)
+* **GitHub Repository:** [https://github.com/arshbuilds/hf26](https://github.com/arshbuilds/hf26)
 * **License:** Permissive **MIT License**
 
 ---
